@@ -40,10 +40,3 @@ var tellimus = {
     console.log((tellimus.rows[item].name) + ' ' + tellimus.rows[item].price + '(' + (tellimus.rows[item].amount) + 'tk' + ')' + ' - ' + (priceWithVat.toFixed(2)) + ' Euro')
   }
 console.log('kokku' + ' - ' + total.toFixed(2) + ' euro')
-  let total = 0
-  for(let item in tellimus.rows) {
-    let priceWithVat = ((tellimus.rows[item].price) + ((tellimus.rows[item].price) * 0.2 )) * tellimus.rows[item].amount
-    total += priceWithVat
-    console.log((tellimus.rows[item].name) + ' ' + '(' + (tellimus.rows[item].amount) + 'tk' + ')' + ' - ' + (priceWithVat.toFixed(2)) + ' Euro') 
-  }
-console.log('kokku' + ' - ' + total.toFixed(2) + ' euro')
